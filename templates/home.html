@@ -1,0 +1,50 @@
+<h1>Welcome to AUS rain forecast</h1>
+<h2>Please enter the inputs below:</h2>
+<form method='POST'>
+ {# This hidden_tag is a CSRF security feature. #}
+ {{ form.hidden_tag()}}
+ 
+ {{ form.Location.label }} {{form.Location}}
+ <br>
+ {{ form.MinTemp.label}} {{form.MinTemp}}
+ <br>
+ {{ form.MaxTemp.label}} {{form.MaxTemp}}
+ <br>
+ {{form.Rainfall.label}} {{form.Rainfall}}
+ <br>
+ {{form.Evaporation.label}} {{form.Evaporation}}
+ <br>
+ {{ form.Sunshine.label }} {{form.Sunshine}}
+ <br>
+ {{form.WindGustDir.label}} {{form.WindGustDir}}
+ <br>
+ {{ form.WindGustSpeed.label}} {{form.WindGustSpeed}}
+ <br>
+ {{ form.WindDir9am.label}} {{form.WindDir9am}}
+ <br>
+ {{form.WindDir3pm.label}} {{form.WindDir3pm}}
+ <br>
+ {{form.WindSpeed9am.label}} {{form.WindSpeed9am}}
+ <br>
+ {{form.WindSpeed3pm.label}} {{form.WindSpeed3pm}}
+ <br>    
+ {{ form.Humidity9am.label}} {{form.Humidity9am}}
+ <br>
+ {{ form.Humidity3pm.label}} {{form.Humidity3pm}}
+ <br>
+ {{form.Pressure9am.label}} {{form.Pressure9am}}
+ <br>
+ {{form.Pressure3pm.label}} {{form.Pressure3pm}}
+ <br>
+ {{form.Cloud9am.label}} {{form.Cloud9am}}
+ <br>
+ {{ form.Cloud3pm.label}} {{form.Cloud3pm}}
+ <br>
+ {{ form.Temp9am.label}} {{form.Temp9am}}
+ <br>
+ {{form.Temp3pm.label}} {{form.Temp3pm}}
+ <br>
+ {{form.RainToday.label}} {{form.RainToday}}
+ <br>    
+ {{ form.submit() }}
+</form>
